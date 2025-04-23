@@ -1,0 +1,38 @@
+/* src/components/UltimoEpisodio.css */
+
+.episodio-container {
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.episodio-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  border-radius: 1rem;
+}
+.episodio-container {
+  background:  #0d0d0d;
+  color: white;
+  padding: 3rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.video-wrapper,
+.audio-wrapper {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

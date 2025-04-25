@@ -1,0 +1,133 @@
+section {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.integrante-card {
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  max-width: 800px;
+  padding: 50px 30px 50px 20px;
+  border-radius: 24px;
+  box-shadow: 0 80px 60px
+  rgb(0 0 0 / 12%);
+  background: linear-gradient(45deg, #0cd2d1, #0857c0);
+  color: #fdfcfd;
+}
+
+.integrante-card img {
+  max-width: 280px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 30px;
+  margin-left: -60px;
+  border-radius: inherit;
+  transition: 0.3s;
+}
+.integrante-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-info h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 6px;
+}
+.card-info h3 {
+  margin: 0 0 12px;
+  opacity: 0.66;
+}
+
+.card-info p {
+  margin: 0 0 30px;
+  opacity: 0.42;
+}
+
+.card-info a {
+  border: 1px solid #f8f8f8;
+  background-color: rgb(84, 117, 167);
+  color: rgb(236, 242, 236);
+  width: 20%;
+  min-width: 80px;
+  padding: 12px 26px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.card-info a:hover {
+  background-color: #0cd2d1;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.episodios {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap; /* para que no se salgan en pantallas medianas */
+}
+
+
+
+@media (max-width: 600px) {
+  .integrante-card {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .integrante-card a {
+    justify-content: center;
+    width: 50%;
+  }
+
+  .integrante-card h2 {
+    margin-right: 0;
+  }
+
+  .integrante-card img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+  }
+
+  .integrante-card p {
+    max-width: 400px;
+  }
+
+  .episodios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .episodios a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 420px) {
+  .integrante-card img {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+    margin: -90px 0 30px 0;
+  }
+
+  .integrante-card a {
+    width: 25%
+  }
+}
